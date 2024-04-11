@@ -1,5 +1,5 @@
 import './App.css'
-import { useState, useEffect,useRef } from 'react'
+import { useState, useEffect } from 'react'
 import Card from './components/Card/Card'
 import { CheckBoxVariant } from './components/CheckBox/checkBox'
 import TextCheckBox from './components/TextCheckBox/TextCheckBox'
