@@ -1,0 +1,20 @@
+.primary_button {
+    width: 100%;
+    height:40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 4px;
+    opacity: 0px;
+    background: #FFCE22;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18.2px;
+    display: flex;
+    color:#1F2128;
+    margin:2px;
+    cursor: pointer;
+}   
+

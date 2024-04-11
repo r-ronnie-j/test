@@ -1,0 +1,105 @@
+
+.contain {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    font-size: 22px;
+    right:31px;
+    user-select: none;
+    border-radius: 6px;
+}
+
+
+/* Hide the browser's default checkbox */
+.contain input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    border-radius: 6px;
+    background-color: #FFFFFF;
+    box-sizing: border-box;
+}
+
+
+/* When the checkbox is checked, add a light blue background */
+.contain input:checked~.checkmark_bg_light_blue {
+    background-color: #2196F3;
+}
+
+
+/* When the checkbox is checked, add a dark blue background */
+.contain input:checked~.checkmark_bg_dark_blue {
+    background-color: #5087F8;
+}
+
+/* When a checkbox is checked and a white background */
+.contain input:checked~.checkmark_bg_white {
+    background-color: #ffffff;
+}
+
+/* When a checkbox is checked and border is to be shown */
+.contain input:checked~ .bordered, .border{
+    border: solid 1px #BDBDBD;
+}
+
+.sorrounding {
+    position: absolute;
+    border-radius: 8px;
+    top:-3px;
+    left: -3px;
+    width: 31px;
+    height: 31px;
+}
+
+/* when checkbox is checked and sorrounding color is needed */
+.contain input:checked~ .sorrounding {
+    background-color: #CBD0DEAA;
+}
+
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.contain input:checked~.checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.contain .checkmark:after {
+    left: 8px;
+    top: 3px;
+    width: 6px;
+    height: 13px;
+    border-width: 0 1px 1px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.checkmark_light:after{
+    border: solid #E3E3E3;
+}
+
+.checkmark_dark:after{
+    border:solid #878787;
+}
+
+.checkmark_white:after{
+    border:solid #FFFFFF;
+}
